@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00e676">
+    <title>Planner</title>
+    <link rel="stylesheet" href="style.css">
+        <!-- materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="manifest" href="manifest.json">
+    <!--Materialize css JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="material-design"  style="background-color: #00E676 ;">
+        <ul id="slide-out" class="sidenav">
+
+            <li><div class="user-view">
+              <div class="background">
+              </div>
+            </div></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calender.html">Calender</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="darkmode.html">DARK MODE</a></li>
+          </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger material-icons"><i class="medium material-icons">menu</i></a>
+    </nav>
+    <div class="section">
+        <div class="calander-container">
+            <div class="calender">
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                
+                    <i class="fas fa-angle-right next"></i>
+                </div>
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="days">
+                        
+                    </div>  
+            </div>
+        </div>
+    </div>
+    <div class="divider">
+    </div>
+    <div class="section">
+        <div class="container">
+            <form method="POST">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="Todo">Todo:</label>
+                        <input type="text" name="Todo" id="todoInput" class="active validate" required />
+                    </div>
+                    <div class="col s12">
+                        <br>
+                        <input type="date" id="dateInput" required />
+                    </div>
+                    <div class="col l6">
+                        <label for="TimeFrom">From</label> 
+                        <input type="time" id="todoTimeFrom" name="TimeFrom" required />
+                    </div>
+                    <div class="col l6">
+                        <label for="TimeTill">Till</label>
+                        <input type="time" id="todoTimeTill" name="TimeTill" required />
+                    </div>
+                    <div class="col s12">
+                        <input type="button" value="submit" class="waves btn" style="background-color: #00E676 ;"  onclick="AddTodo()">
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col l6">
+                    <table id="TableTodos">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICE WORKER INIT -->
+    <script src="scripts/app.js"></script>
+    <!-- CALENDER SCRIPT -->
+    <script src="scripts/calenderScript.js"></script>
+    <!-- LOCALBASE SCRIPT-->
+    <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+    <!-- MATERIALIZE CSS SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- SCRIPT -->
+    <script src="scripts/script.js"></script>
+    <!-- DATABASE SCRIPT -->
+    <script src="scripts/dbScript.js"></script>
+    <!-- DARKMODE SCRIPT -->
+    <script src="scripts/darkmodeScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00e676">
+    <title>Planner - Home</title>
+    <link rel="stylesheet" href="style.css">
+        <!-- materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="manifest" href="manifest.json">
+    <!--Materialize css JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    <link rel="apple-touch-icon" href="/images/icons/icon 192x192.png"/>
+    <nav style="background-color: #00e676;">
+        <ul id="slide-out" class="sidenav">
+            <li><div class="user-view">
+              <div class="background">
+              </div>
+            </div></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calender.html">Calender</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="darkmode.html">DARK MODE</a></li>
+          </ul>
+          
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
+    </nav>
+    <div class="section">
+        <div class="calander-container">
+            <div class="calender">
+                <div class="month">
+                    <div class="date">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider">
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12" id="weather">
+                    <h5 id="city"></h5>
+                    <p id="temp"></p> <p id="feels-like"></p>
+                    <p id="wind"></p>
+                    <p id="state"></p>
+                    <img id="icon-weather">
+                </div>
+                <div class="col l6 s12" >
+                    <table id="todo-today" >
+                        <h7>Today</h7>
+                    </table>
+                </div>
+                
+                <div class="col l6 s12">
+                    <table id="done-today">
+                        <th>Done Today</th>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICE WORKER INIT -->
+    <script src="scripts/app.js"></script>
+    <!-- CALENDER SCRIPT -->
+    <script src="scripts/calenderScript.js"></script>
+    <!-- LOCALBASE SCRIPT-->
+    <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+    <!-- MATERIALIZE CSS SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- SCRIPT -->
+    <script src="scripts/script.js"></script>
+    <!-- DATABASE SCRIPT -->
+    <script src="scripts/dbScript.js"></script>
+    <!-- GOOGLE GEODECODER SCRIPT-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+    <!-- WEATHER SCRIPT -->
+    <script src="scripts/weatherScript.js"></script>
+    <!--Dark Mode Script-->
+    <script src="scripts/darkmodeScript.js"></script>
+
+</body>
+</html>

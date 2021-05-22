@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00e676">
+    <title>Planner - Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+        <!-- materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="manifest" href="manifest.json">
+    <!--Materialize css JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <nav style="background-color: #00e676;">
+        <ul id="slide-out" class="sidenav">
+            <li><div class="user-view">
+              <div class="background">
+              </div>
+            </div></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calender.html">Calender</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="darkmode.html">DARK MODE</a></li>
+          </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </nav>
+    <div class="container"></div>
+    <div class="l6 center">
+        <h7>Say the magic words "Dark Mode" and make you're application ready for the night!</h7>
+        <button id='btnGiveCommand'>Click and speak!</button>
+        <br><br>
+        <span id='message'></span>
+    </div>
+    </div>
+    <!-- SERVICE WORKER INIT -->
+    <script src="scripts/app.js"></script>
+    <!-- MATERIALIZE CSS SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- SCRIPT -->
+    <script src="scripts/script.js"></script>
+    <!--Dark Mode Script-->
+    <script src="scripts/darkmodeScript.js"></script>
+    <!-- NOTIFICATION SCRIPT -->
+    <script src="scripts/notification.js"></script>
+</body>
+</html>

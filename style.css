@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.calender{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9ffec;
+    box-shadow: 0.5rem 3rem rgba((0), 0, 0, 0.4);
+}
+
+.month{
+    width: 100%;
+    height: 12rem;
+    background-color: #00e676;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i{
+    font-size: 2.5rem;
+}
+.month h1{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.month p{
+    font-size: 1.6rem;
+}
+
+.weekdays{
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.weekdays div{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.3rem, 5rem, rgba(0, 0, 0, 0.5);
+}
+
+.sidenav-trigger{
+    display: block !important;
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.days div{
+    font-size: 1.4rem;
+    text-align: center;
+    width: calc(100%/7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.3rem 0.5rem rgba((0), 0, 0, 0.5);
+    transition: background-color 0.2s;
+    
+}
+
+.days div:hover:not(.today){
+    background-color: #b9f6ca ;
+    border: 0.2rem solid #00e676;
+    cursor: pointer;
+}
+
+.prev-date,
+.next-date{
+    opacity: 0.5;
+}
+.today{
+    background-color: #00e676;
+}
+
+.calander-container{
+    width: 70%;
+    margin: auto;
+}
+.calender-Todo{
+     font-size: small;
+     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .calander-container{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .weekdays div{
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 200px) {
+    .days div{
+        font-size: small ;
+    }
+}
